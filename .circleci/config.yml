@@ -14,9 +14,9 @@ jobs:
       - checkout
       - run: echo "A  more familiar hi"
       - run: sleep 25
-  workflows:
-    version: 2
-    one_and_two:
-      jobs:
-        - build
-        - buildx
+workflows:
+  version: 2
+  one_and_two:
+    jobs:
+      - build
+      - buildx
